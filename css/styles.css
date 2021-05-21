@@ -72,7 +72,7 @@ img {
 color: var(--primary-text-color);
 }
 
-.logo-color {
+.logo__color {
     color:var(--secondary-background-color);
 }
 
@@ -142,21 +142,21 @@ color: var(--primary-text-color);
     margin-left: 93px;
 }
 
-.header-links .item {
+.header-links .item__link {
     margin-right: 50px;
     display: block;
 }
 
-.header-links .item:last-child {
+.header-links .item__link:last-child {
     margin-right: 0px;
 }
 
-.adress-icon {
+.address__icon {
     fill: currentColor;
     margin-right: 10px;
 }
 
-.address-link {
+.address__link {
     display: flex;
     align-items: center;
 }
@@ -167,7 +167,7 @@ color: var(--primary-text-color);
     margin-left: auto;
 }
 
-.header-contacts .item + .item {
+.header-contacts .item__header + .item__header {
      margin-left: 50px;
 }
 
