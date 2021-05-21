@@ -670,7 +670,7 @@ button:hover {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button {
+.modal__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -686,7 +686,7 @@ button:hover {
     right: 8px;
 }
 
-.modal-button:hover {
+.modal__button:hover {
     background-color: var(--secondary-text-color);
     border-radius: 50%;
 
@@ -695,12 +695,12 @@ button:hover {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover > .modal-svg,
-.modal-button:focus > .modal-svg {
+.modal__button:hover > .modal__svg,
+.modal__button:focus > .modal__svg {
     fill: var(--secondary-background-color);
 }
 
-.modal-svg:hover {
+.modal__svg:hover {
     opacity: 1;
     fill: var(--secondary-background-color);
 
@@ -714,11 +714,7 @@ textarea {
     resize: none;
 }
 
-.form-title {
-    margin-bottom: 10px;
-}
-
-.name-input {
+.form-input__text {
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 14px;
@@ -730,9 +726,10 @@ textarea {
     padding-top: 12px;
 }
 
-.form-title {
+.form__title {
     font-size: 20px;
     line-height: 23px;
+    margin-bottom: 10px;
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -781,7 +778,7 @@ textarea {
     border-radius: 4px;
 }
 
-.text-input-cont {
+.form-input__content {
     height: 40px;
 }
 
@@ -790,13 +787,13 @@ textarea {
     text-decoration: underline;
 }
 
-.form-item:not(:last-child) {
+.form__item:not(:last-child) {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.form-item:focus-within > .icon-form {
+.form__item:focus-within > .form__icon {
     fill: var(--secondary-background-color);
 
     transition-property: fill, outline;
@@ -852,13 +849,13 @@ textarea {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-form {
+.form__icon {
     position: absolute;
     bottom: 24px;
     left: 13px;
 }
 
-.submit-button {
+.submit__button {
     font-size: 16px;
     line-height: 1.87;
     margin: 0 auto;
@@ -882,7 +879,7 @@ textarea {
 
 /* -------------------------------ФУТЕР--------------------------------- */
 
-.logo-footer {
+.logo__footer {
     color:var(--secondary-text-color);
     font-family: var(--logo-font);
     font-size: 26px;
@@ -890,8 +887,8 @@ textarea {
     letter-spacing: 0.03em;
 } 
 
-.logo-footer:not(.nohover):hover,
-.logo-footer:not(.nofocus):focus {
+.logo__footer:not(.nohover):hover,
+.logo__footer:not(.nofocus):focus {
 color: var(--secondary-text-color);
 }
 
@@ -918,19 +915,19 @@ color: var(--secondary-text-color);
     background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-info-svg {
+.footer-info__svg {
  margin-left: 70px;
 }
 
-.footer-icons {
+.footer__icons {
     margin-top: 20px;
 }
 
-.footer-svg {
+.footer__svg {
     fill:var(--secondary-text-color)
 }
 
-.footer-title {
+.footer__title {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -942,7 +939,7 @@ color: var(--secondary-text-color);
     display: flex;
 }
 
-.footer-list li:not(:last-child) {
+.footer__list li:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -952,11 +949,11 @@ color: var(--secondary-text-color);
 
 /* ----------------------------------Form-footer------------------ */
 
-.footer-form {
+.footer__form {
     margin-left: 93px;
 }
 
-.footer-form:not(:last-child) {
+.footer__form:not(:last-child) {
     display: flex;
     flex-direction: column;
 }
@@ -973,7 +970,7 @@ color: var(--secondary-text-color);
     color: var(--secondary-text-color);
 }
 
-.input-footer-form {
+.footer-form__input {
     width: 358px;
     height: 50px;
     font-size: 16px;
@@ -1018,13 +1015,13 @@ color: var(--secondary-text-color);
 }
 
 
-.foter-form-svg {
+.footer-form__svg {
     position: relative;
     width: 24px;
     height: 24px;
     margin-left: 10px;
 }
 
-.footer-form-container {
+.footer-form__container {
     display: flex;
 }
