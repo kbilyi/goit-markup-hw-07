@@ -15,12 +15,12 @@
   --logo-font: 'Raleway', sans-serif;
 }
 
-body {
-  font-family: var(--main-font);
-  color: var(--accent-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 *,
@@ -46,12 +46,12 @@ img {
   max-width: 100%;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  font-family: var(--main-font);
+  color: var(--accent-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .section {
