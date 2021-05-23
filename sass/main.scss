@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./base/container";
 @import "./base/common";
+@import "./components/address";
 
 body {
     font-family: var(--main-font);
@@ -106,16 +107,6 @@ color: var(--primary-text-color);
 
 .header-links .item__link:last-child {
     margin-right: 0px;
-}
-
-.address__icon {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.address__link {
-    display: flex;
-    align-items: center;
 }
 
 .header-contacts {
@@ -442,21 +433,6 @@ color: var(--primary-text-color);
     background-color: var(--secondary-text-color);
 }
 
-address {
-    font-style: inherit;
-}
-
-/* ----------------------------------------ССЫЛКИ------------------------------- */
-
-a {
-    color: var(--primary-text-color);
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
 /* -------------------------------------КНОПКИ--------------------------- */
 
 
@@ -495,15 +471,6 @@ li {
     margin-right: 0px;
 }
 
-button:hover {
-    cursor:pointer;
-    color: var(--secondary-text-color);
-    background-color: var(--secondary-background-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-}
 
 /* ----------------------------CARDS-FILTER-------------------- */
 
@@ -668,9 +635,7 @@ button:hover {
 }
 
 /* ------------------------Form-backdrop------------------------- */
-textarea {
-    resize: none;
-}
+
 
 .form-input__text {
     margin-bottom: 4px;
@@ -856,10 +821,6 @@ color: var(--secondary-text-color);
     letter-spacing: 0.03em;
     margin-bottom: 9px;
     color: var(--primary-background-color);
-}
-
-.footer .address {
-    margin-top: 20px;
 }
 
 .footer-info {
