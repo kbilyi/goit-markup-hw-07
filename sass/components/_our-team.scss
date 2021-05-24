@@ -1,0 +1,48 @@
+.our-team__title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+}
+
+.our-team {
+    background: var(--primary-background-color);
+}
+
+.our-team__list {
+    display: flex;
+    justify-content: center;
+}
+
+.card-name {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+}
+
+.card-case {
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
+}
+
+.card-case:last-child {
+    margin-right: 0px;
+}
+
+.card-name__work {
+    min-width: 137px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--secondary-text-color);
+}

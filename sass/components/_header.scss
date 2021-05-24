@@ -73,3 +73,17 @@
 .menu-link:focus::after  {
     opacity: 1;
 }
+
+
+.contacts {
+    color: var(--accent-text-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: var(--secondary-background-color);
+}
