@@ -146,8 +146,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header-link:hover, .header-link:focus {
   color: var(--secondary-background-color);
 }
 
@@ -190,8 +189,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover::after,
-.menu-link:focus::after {
+.menu-link:hover::after, .menu-link:focus::after {
   opacity: 1;
 }
 
@@ -202,8 +200,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts:hover,
-.contacts:focus {
+.contacts:hover, .contacts:focus {
   color: var(--secondary-background-color);
 }
 
@@ -294,14 +291,11 @@ textarea {
 
 .footer {
   display: flex;
+  background: var(--accent-background-footer-color);
 }
 
 .footer__list li:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer {
-  background: var(--accent-background-footer-color);
 }
 
 /* ----------------------------------Form-footer------------------ */
@@ -682,13 +676,6 @@ textarea {
   border-top: 0px;
 }
 
-.overlay__link:hover .overlay__text,
-.overlay__link:focus .overlay__text {
-  opacity: 1;
-  transform: translateY(0%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .overlay__text {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
@@ -714,9 +701,15 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay__link:hover,
-.overlay__link:focus {
+.overlay__link:hover, .overlay__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.overlay__link:hover .overlay__text,
+.overlay__link:focus .overlay__text {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {

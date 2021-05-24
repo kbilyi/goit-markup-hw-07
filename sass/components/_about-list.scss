@@ -6,10 +6,11 @@
 .about-list li {
     margin-right: 30px;
     align-items: center;
-}
 
-.about-list li:last-child {
-    margin-right: 0px;;
+
+    &:last-child {
+        margin-right: 0px;;
+    }
 }
 
 .our-privilege {
