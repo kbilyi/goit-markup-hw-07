@@ -3,11 +3,11 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
 
-.logo:not(.nohover):hover,
-.logo:not(.nofocus):focus {
-color: var(--primary-text-color);
+    &:not(.nohover):hover,
+    &:not(.nofocus):focus {
+        color: var(--primary-text-color);
+    }
 }
 
 .logo__color {
@@ -16,16 +16,15 @@ color: var(--primary-text-color);
 
 // ----------------------- Logo Footer-----------------------
 
-
 .logo__footer {
     color:var(--secondary-text-color);
     font-family: var(--logo-font);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-} 
 
-.logo__footer:not(.nohover):hover,
-.logo__footer:not(.nofocus):focus {
-color: var(--secondary-text-color);
-}
+    &:not(.nohover):hover,
+    &:not(.nofocus):focus {
+        color: var(--secondary-text-color);
+    }
+} 

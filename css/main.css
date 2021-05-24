@@ -99,8 +99,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.logo:not(.nohover):hover,
-.logo:not(.nofocus):focus {
+.logo:not(.nohover):hover, .logo:not(.nofocus):focus {
   color: var(--primary-text-color);
 }
 
@@ -116,8 +115,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.logo__footer:not(.nohover):hover,
-.logo__footer:not(.nofocus):focus {
+.logo__footer:not(.nohover):hover, .logo__footer:not(.nofocus):focus {
   color: var(--secondary-text-color);
 }
 
@@ -818,6 +816,11 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.textarea-input input::placeholder {
+  padding-top: 12px;
+  padding-left: 16px;
+}
+
 .text-input:not(:last-child) {
   width: 448px;
   margin-bottom: 10px;
@@ -857,11 +860,6 @@ textarea {
   transition-property: fill, outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.textarea-input input::placeholder {
-  padding-top: 12px;
-  padding-left: 16px;
 }
 
 .agree-box {
