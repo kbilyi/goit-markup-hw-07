@@ -114,56 +114,6 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-.logo {
-  font-family: var(--logo-font);
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo:not(.nohover):hover,
-.logo:not(.nofocus):focus {
-  color: var(--primary-text-color);
-}
-
-.logo__color {
-  color: var(--secondary-background-color);
-}
-
-.logo__footer {
-  color: var(--secondary-text-color);
-  font-family: var(--logo-font);
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo__footer:not(.nohover):hover,
-.logo__footer:not(.nofocus):focus {
-  color: var(--secondary-text-color);
-}
-
-body {
-  font-family: var(--main-font);
-  color: var(--accent-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-/* -----------------------------ЛОГОТИП--------------------- */
-/* --------------------------МЕЙН-------------------------- */
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-/* ----------------------------------ХЕДЕР---------------------------- */
 .header {
   background: var(--secondary-text-color);
   display: flex;
@@ -194,26 +144,6 @@ body {
   color: var(--secondary-background-color);
 }
 
-.menu-link::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: var(--secondary-background-color);
-  border-radius: 2px;
-  display: block;
-  position: absolute;
-  margin-top: 32px;
-  opacity: 0;
-  transition-property: background-color, opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-link:hover::after,
-.menu-link:focus::after {
-  opacity: 1;
-}
-
 .header-links {
   display: flex;
   margin-left: 93px;
@@ -238,19 +168,26 @@ body {
   margin-left: 50px;
 }
 
-.contacts {
-  color: var(--accent-text-color);
-  transition-property: color;
+.menu-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: var(--secondary-background-color);
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  margin-top: 32px;
+  opacity: 0;
+  transition-property: background-color, opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts:hover,
-.contacts:focus {
-  color: var(--secondary-background-color);
+.menu-link:hover::after,
+.menu-link:focus::after {
+  opacity: 1;
 }
 
-/* --------------------------ЗАГОЛОВОК И КНОПКА------------------------- */
 .hero {
   background: var(--accent-background-title-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundhero.jpg);
@@ -297,6 +234,169 @@ body {
   display: block;
 }
 
+.place {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+  color: var(--primary-background-color);
+}
+
+.footer-info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: baseline;
+}
+
+.icons-footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-info__svg {
+  margin-left: 70px;
+}
+
+.footer__icons {
+  margin-top: 20px;
+}
+
+.footer__svg {
+  fill: var(--secondary-text-color);
+}
+
+.footer__title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.footer {
+  display: flex;
+}
+
+.footer__list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer {
+  background: var(--accent-background-footer-color);
+}
+
+/* ----------------------------------Form-footer------------------ */
+.footer__form {
+  margin-left: 93px;
+}
+
+.footer__form:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: var(--accent-background-our-team-color);
+  padding-left: 10px;
+  background: transparent;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-form__svg {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.footer-form__container {
+  display: flex;
+}
+
+.sub-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-text-color);
+  background: var(--secondary-background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.sub-btn:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.footer-form__svg {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.footer-form__container {
+  display: flex;
+}
+
+.sub-title {
+  width: 219px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--secondary-text-color);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--accent-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------------------------------ХЕДЕР---------------------------- */
+.contacts {
+  color: var(--accent-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--secondary-background-color);
+}
+
+/* --------------------------ЗАГОЛОВОК И КНОПКА------------------------- */
 /* ----------------------------О НАС ------------------------ */
 .about-list {
   display: flex;
@@ -854,126 +954,5 @@ body {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* -------------------------------ФУТЕР--------------------------------- */
-.place {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-bottom: 9px;
-  color: var(--primary-background-color);
-}
-
-.footer-info {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  align-items: baseline;
-}
-
-.icons-footer {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.footer-info__svg {
-  margin-left: 70px;
-}
-
-.footer__icons {
-  margin-top: 20px;
-}
-
-.footer__svg {
-  fill: var(--secondary-text-color);
-}
-
-.footer__title {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-}
-
-.footer {
-  display: flex;
-}
-
-.footer__list li:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer {
-  background: var(--accent-background-footer-color);
-}
-
-/* ----------------------------------Form-footer------------------ */
-.footer__form {
-  margin-left: 93px;
-}
-
-.footer__form:not(:last-child) {
-  display: flex;
-  flex-direction: column;
-}
-
-.sub-title {
-  width: 219px;
-  height: 16px;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: var(--secondary-text-color);
-}
-
-.footer-form__input {
-  width: 358px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  color: var(--accent-background-our-team-color);
-  padding-left: 10px;
-  background: transparent;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-
-.sub-btn {
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  margin-left: 12px;
-  border: none;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary-text-color);
-  background: var(--secondary-background-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.sub-btn:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.footer-form__svg {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-}
-
-.footer-form__container {
-  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
