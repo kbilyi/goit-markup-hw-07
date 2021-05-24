@@ -19,6 +19,10 @@
 .services__img {
     margin-right: 30px;
     position: relative;
+
+    &:last-child {
+        margin-right: 0px;
+    }
 }
 
 .services__overlay {
@@ -41,9 +45,4 @@
 
 .thumb-title {
     position: absolute;
-}
-
-
-.services__img:last-child {
-    margin-right: 0px;
 }

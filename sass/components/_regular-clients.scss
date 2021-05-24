@@ -31,11 +31,25 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--secondary-background-color);
+        box-sizing: border-box;
+    }
+
+    &:hover .regular-clients__svg, 
+    &:focus .regular-clients__svg {
+        fill: var(--secondary-background-color);
+    }
  }
 
 
- .regular-clients__item:not(:last-child){
-    margin-right: 30px;
+ .regular-clients__item {
+ 
+    &:not(:last-child){
+        margin-right: 30px;
+    }
  }
 
 .regular-clients__svg { 
@@ -44,15 +58,4 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.regular-clients__link:hover,
-.regular-clients__link:focus {
-    border: 1px solid var(--secondary-background-color);
-    box-sizing: border-box;
-}
-
-.regular-clients__link:hover .regular-clients__svg, 
-.regular-clients__link:focus .regular-clients__svg {
-    fill: var(--secondary-background-color);
 }

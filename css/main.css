@@ -394,11 +394,6 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-icons__link:hover,
-.socials-icons__link:focus {
-  background-color: var(--secondary-background-color);
-}
-
 .socials-icons__link {
   width: 44px;
   height: 44px;
@@ -409,6 +404,10 @@ textarea {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-icons__link:hover, .socials-icons__link:focus {
+  background-color: var(--secondary-background-color);
 }
 
 .socials-icons__link:hover .socials-icons__svg,
@@ -477,6 +476,10 @@ textarea {
   position: relative;
 }
 
+.services__img:last-child {
+  margin-right: 0px;
+}
+
 .services__overlay {
   font-size: 14px;
   line-height: 16px;
@@ -495,10 +498,6 @@ textarea {
 
 .thumb-title {
   position: absolute;
-}
-
-.services__img:last-child {
-  margin-right: 0px;
 }
 
 .our-team__title {
@@ -580,6 +579,16 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.regular-clients__link:hover, .regular-clients__link:focus {
+  border: 1px solid var(--secondary-background-color);
+  box-sizing: border-box;
+}
+
+.regular-clients__link:hover .regular-clients__svg,
+.regular-clients__link:focus .regular-clients__svg {
+  fill: var(--secondary-background-color);
+}
+
 .regular-clients__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -589,17 +598,6 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.regular-clients__link:hover,
-.regular-clients__link:focus {
-  border: 1px solid var(--secondary-background-color);
-  box-sizing: border-box;
-}
-
-.regular-clients__link:hover .regular-clients__svg,
-.regular-clients__link:focus .regular-clients__svg {
-  fill: var(--secondary-background-color);
 }
 
 .main-nav {
