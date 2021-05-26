@@ -202,6 +202,30 @@ textarea {
   color: var(--secondary-background-color);
 }
 
+.phonemenu_button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.phonemenu_button:hover {
+  background-color: var(--secondary-text-color);
+}
+
+.phonemenu_button .phoneicon_close {
+  display: none;
+}
+
+.phonemenu_button.is-open .icon-close_phone {
+  display: block;
+}
+
+.phonemenu_button.is-open .icon-menu {
+  display: none;
+}
+
 .hero {
   background: var(--accent-background-title-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundhero.jpg);
@@ -276,7 +300,12 @@ textarea {
 }
 
 .footer__svg {
+  width: 20px;
+  height: 20px;
   fill: var(--secondary-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__title {
@@ -388,7 +417,7 @@ textarea {
 .socials-icons__svg {
   width: 20px;
   height: 20px;
-  fill: var(--secondary-text-color);
+  fill: var(--svg-primary-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

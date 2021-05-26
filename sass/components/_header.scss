@@ -92,3 +92,29 @@
     }
 
 }
+
+// ----------------------------------phone menu--------------------------
+
+.phonemenu_button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        background-color: var(--secondary-text-color);
+    }
+}
+
+.phonemenu_button .phoneicon_close {
+    display: none;
+}
+
+.phonemenu_button.is-open .icon-close_phone {
+    display: block;
+}
+
+.phonemenu_button.is-open .icon-menu {
+    display: none;
+}

@@ -27,7 +27,13 @@
 }
 
 .footer__svg {
-    fill:var(--secondary-text-color)
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary-text-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer__title {
