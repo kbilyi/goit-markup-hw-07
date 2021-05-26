@@ -14,12 +14,21 @@
       <div class="container header-page">
       <nav class="main-nav">
 
-        <button type="button" class="phonemenu_button is-open" data-menu-button>
+        <button
+         type="button"
+          class="phonemenu_button"
+          aria-expanded="false"
+          aria-controls="menu-container_phone"
+          data-menu-button
+          >
           <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-            <use class="phoneicon_menu" href="./images/icons/sprite.svg#icon-menu"></use>
             <use class="phoneicon_close" href="./images/icons/sprite.svg#icon-close_phone"></use>
+            <use class="phoneicon_menu" href="./images/icons/sprite.svg#icon-menu"></use>
           </svg>
         </button>
+        <div class="menu-container_phone" data-menu>
+          
+        </div>
 
         <a class='logo' href="index.html"><span class="logo__color">Web</span>Studio</a>
         <ul class="header-links">
