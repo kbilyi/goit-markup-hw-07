@@ -14,13 +14,16 @@
 .page-hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 100%;
 }
 
 .hero__title {
     font-family: var(--main-font);
-    font-size: 44px;
-    max-width: 696px;
-    line-height: 1.36;
+    // font-size: 44px;
+    font-size: 26px;
+    // max-width: 696px;
+    // line-height: 1.36;
+    line-height: 1.62;
     text-align: center;
     color:var(--secondary-text-color);
     letter-spacing: 0.06em;
