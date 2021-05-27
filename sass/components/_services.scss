@@ -6,6 +6,15 @@
     color: var(--primary-text-color);
 }
 
+.service__section {
+    display: none;
+
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
 .services {
     padding-top: 0px;
 }
