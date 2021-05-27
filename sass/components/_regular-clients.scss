@@ -17,16 +17,21 @@
     flex-wrap: wrap;
 
     > li {
-        margin-bottom: 30px;
-        margin-left: 30px;
         flex-basis: calc((100% - 60px) / 2);
+        margin-bottom: 30px;
 
         @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
             flex-basis: calc((100% - 90px) / 3);
         }
 
         @media screen and (min-width: 1200px) {
             flex-basis: calc((100% - 180px) / 6);
+            
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+
         }
     }
 }
@@ -60,10 +65,8 @@
 
 
  .regular-clients__item {
- 
-    &:not(:last-child){
-        margin-right: 30px;
-    }
+     display: flex;
+     justify-content: center;
  }
 
 .regular-clients__svg { 

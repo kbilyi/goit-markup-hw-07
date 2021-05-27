@@ -719,13 +719,13 @@ textarea {
 }
 
 .regular-clients__list > li {
-  margin-bottom: 30px;
-  margin-left: 30px;
   flex-basis: calc((100% - 60px) / 2);
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .regular-clients__list > li {
+    margin-bottom: 30px;
     flex-basis: calc((100% - 90px) / 3);
   }
 }
@@ -733,6 +733,9 @@ textarea {
 @media screen and (min-width: 1200px) {
   .regular-clients__list > li {
     flex-basis: calc((100% - 180px) / 6);
+  }
+  .regular-clients__list > li:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -761,8 +764,9 @@ textarea {
   fill: var(--secondary-background-color);
 }
 
-.regular-clients__item:not(:last-child) {
-  margin-right: 30px;
+.regular-clients__item {
+  display: flex;
+  justify-content: center;
 }
 
 .regular-clients__svg {
