@@ -263,6 +263,75 @@ textarea {
   display: block;
 }
 
+.mobile-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--secondary-text-color);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+
+.mobile-menu .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu-close {
+  position: absolute;
+  top: -22px;
+  right: 25px;
+}
+
+.mobile-menu__list {
+  margin-bottom: 50px;
+}
+
+.mobile-menu__list li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__list li a {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: auto;
+}
+
+.mobile-contacts__list li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__list li a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: auto;
+}
+
+.mobile-social__list {
+  display: flex;
+}
+
+.mobile-social__list li a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
 .hero {
   background: var(--accent-background-title-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundhero.jpg);
