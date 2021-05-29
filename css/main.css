@@ -220,20 +220,6 @@ textarea {
   color: var(--secondary-background-color);
 }
 
-.phonemenu_button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  right: 22px;
-}
-
-.phonemenu_button:hover {
-  background-color: var(--secondary-text-color);
-}
-
 .mobile-menu {
   position: fixed;
   top: 0;
