@@ -265,6 +265,7 @@ textarea {
 
 .mobile-menu {
   position: fixed;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -272,7 +273,7 @@ textarea {
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
-  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 .mobile-menu .container {
