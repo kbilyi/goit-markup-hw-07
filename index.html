@@ -13,23 +13,7 @@
     <header class="header">
       <div class="container header-page">
       <nav class="main-nav">
-
-        <!-- <button
-         type="button"
-          class="phonemenu_button"
-          aria-expanded="false"
-          aria-controls="menu-container_phone"
-          data-menu-button
-          >
-          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-            <use class="phoneicon_close" href="./images/icons/sprite.svg#icon-close_phone"></use>
-            <use class="phoneicon_menu" href="./images/icons/sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="menu-container_phone" data-menu> -->
-          
         </div>
-
         <a class='logo' href="index.html"><span class="logo__color">Web</span>Studio</a>
         <!-- <ul class="header-links">
           <li class="item__link"><a href="" class="header-link menu-link">Студия</a></li>
@@ -37,6 +21,11 @@
           <li class="item__link"><a href="" class="header-link menu-link">Контакты</a></li>
         </ul> -->
       </nav>
+      <button class="menu-open">
+        <svg width="40px" height="40px">
+          <use class="phoneicon_menu" href="./images/icons/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
         <!-- <ul class="header-contacts adress-list">
           <li class="item__header"><a href="" class="contacts address__link">
             <svg class="address__icon" width="16" height="12">
@@ -52,9 +41,13 @@
           </a></li> -->
         </ul>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu is-hidden">
         <div class="container">
-          <button class="menu-close">x</button>
+          <button class="menu-close">
+            <svg width="40px" height="40px">
+              <use class="phoneicon_close" href="./images/icons/sprite.svg#icon-close_phone"></use>
+            </svg>
+          </button>
         <ul class="mobile-menu__list">
           <li><a href="">Студия</a></li>
           <li><a href="">Портфолио</a></li>
@@ -364,7 +357,7 @@
       </div>
       </section>
 
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div  class="modal">
           <form class="modal-form">
 
@@ -409,7 +402,7 @@
             </svg>
           </button>
         </div>
-      </div> -->
+      </div>
 
     </main>
       <!-- <footer class="footer">

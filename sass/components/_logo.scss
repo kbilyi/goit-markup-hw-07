@@ -8,6 +8,10 @@
     &:not(.nofocus):focus {
         color: var(--primary-text-color);
     }
+
+    @media screen and (min-width: 480px) {
+       
+    }
 }
 
 .logo__color {
