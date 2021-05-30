@@ -124,6 +124,13 @@ textarea {
   color: var(--primary-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    left: 215px;
+    top: 24px;
+  }
+}
+
 .logo__color {
   color: var(--secondary-background-color);
 }
@@ -150,6 +157,12 @@ textarea {
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+  }
+}
+
 .header-page {
   position: relative;
   display: flex;
@@ -173,9 +186,8 @@ textarea {
 }
 
 .header-links {
-  opacity: 0;
+  display: none;
   position: absolute;
-  display: flex;
   margin-left: auto;
   left: 240px;
 }
@@ -183,6 +195,13 @@ textarea {
 @media screen and (min-width: 768px) {
   .header-links {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-links {
+    left: 450px;
+    display: flex;
   }
 }
 
@@ -198,14 +217,28 @@ textarea {
 .header-contacts {
   opacity: 0;
   position: absolute;
-  display: inline-block;
+  display: none;
   font-weight: 500;
-  margin-left: auto;
+  right: 32px;
+  right: 215px;
 }
 
 @media screen and (min-width: 768px) {
   .header-contacts {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address__link {
+    margin-right: 30px;
+    display: inline-block;
   }
 }
 
@@ -221,26 +254,21 @@ textarea {
   border-radius: 2px;
   display: block;
   position: absolute;
-  margin-top: 32px;
+  margin-top: 18px;
   opacity: 0;
   transition-property: background-color, opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-link::after {
+    margin-top: 25px;
+  }
+}
+
 .menu-link:hover::after, .menu-link:focus::after {
   opacity: 1;
-}
-
-.contacts {
-  color: var(--accent-text-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts:hover, .contacts:focus {
-  color: var(--secondary-background-color);
 }
 
 .mobile-menu {
@@ -434,13 +462,16 @@ textarea {
   letter-spacing: 0.03em;
   margin-bottom: 9px;
   color: var(--primary-background-color);
+  margin-left: -35px;
 }
 
 .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: baseline;
 }
 
 .icons-footer {
@@ -448,11 +479,14 @@ textarea {
 }
 
 .footer-info__svg {
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
 }
 
 .footer__icons {
   margin-top: 20px;
+  margin-left: -25px;
 }
 
 .footer__svg {
@@ -462,6 +496,17 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts {
+  color: var(--accent-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts:hover, .contacts:focus {
+  color: var(--secondary-background-color);
 }
 
 .footer__title {
@@ -474,6 +519,7 @@ textarea {
 
 .footer {
   display: flex;
+  flex-direction: column;
   background: var(--accent-background-footer-color);
 }
 
@@ -483,16 +529,16 @@ textarea {
 
 /* ----------------------------------Form-footer------------------ */
 .footer__form {
-  margin-left: 93px;
-}
-
-.footer__form:not(:last-child) {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-form__input {
-  width: 358px;
+  min-width: 358px;
+  margin-bottom: 20px;
   height: 50px;
   font-size: 16px;
   line-height: 20px;
@@ -515,6 +561,7 @@ textarea {
 
 .footer-form__container {
   display: flex;
+  flex-direction: column;
 }
 
 .sub-btn {
@@ -524,9 +571,8 @@ textarea {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin-left: 12px;
+  margin-left: 80px;
   border: none;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
