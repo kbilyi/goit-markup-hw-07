@@ -17,6 +17,12 @@
     padding-bottom: 60px;
     // display: flex;
     // align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 // .footer_thumb {
@@ -92,9 +98,13 @@
 
     // margin-left: 93px;
 
-    &:not(:last-child) {
-        // display: flex;
-        // flex-direction: column;
+    // &:not(:last-child) {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    @media screen and (min-width: 768px) {
+    
     }
 }
 

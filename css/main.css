@@ -194,7 +194,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .header-links {
-    opacity: 1;
+    display: flex;
   }
 }
 
@@ -215,7 +215,6 @@ textarea {
 }
 
 .header-contacts {
-  opacity: 0;
   position: absolute;
   display: none;
   font-weight: 500;
@@ -225,7 +224,8 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .header-contacts {
-    opacity: 1;
+    display: block;
+    right: 30px;
   }
 }
 
@@ -472,6 +472,14 @@ textarea {
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .icons-footer {
